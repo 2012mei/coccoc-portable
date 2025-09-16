@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://img.bibica.net/UHFNKQjw.png" alt="UHFNKQjw">
+<img src="https://img.bibica.net/LdQl82XW.png" alt="Fk9HGGgb">
 </p>
 
 # Cốc Cốc Portable Debloat 

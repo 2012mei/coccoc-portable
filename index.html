@@ -229,6 +229,26 @@
             text-decoration: underline;
         }
 
+/* Ẩn footer */
+.atk-list-footer {
+display: none !important;
+}
+
+/* Ẩn link website khi comment */
+input[name="link"].atk-link {
+    display: none;
+}
+
+/* Bo tròn avatar */
+.atk-comment>.atk-avatar img {
+border-radius: 50% !important;
+}
+/* Tắt hiệu ứng a href khi user điền website, hạn chế spam link rác  */
+.atk-avatar a {
+	 pointer-events: none !important;
+ cursor: default !important;
+}		
+
         @media (max-width: 600px) {
             body {
                 padding: 10px;
@@ -256,7 +276,7 @@
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 5px;
-            }
+            }  
         }
     </style>
 </head>
@@ -311,6 +331,24 @@
                     </ul>
                 </div>
             </div>
+
+
+<link href="https://comment.bibica.net/dist/Artalk.css" rel="stylesheet">
+<script src="https://comment.bibica.net/dist/Artalk.js"></script>
+            <div class="section">
+                <h2>📝 Bình luận</h2>
+                <div id="Comments"></div>
+            </div>
+
+<script>
+  Artalk.init({
+    el:        '#Comments',
+    pageKey:   'https://coccoc.bibica.net/', 
+    pageTitle: '',
+    server:    'https://comment.bibica.net',
+    site:      'Cốc Cốc',
+  })
+</script>           
 
             <p style="text-align: center; margin-top: 10px; font-size: 0.9rem;">
                 <a href="https://github.com/bibicadotnet/coccoc-portable" target="_blank" style="color: #ff6b35; text-decoration: none; font-size: 1.1em; display: inline-flex; align-items: center; gap: 8px; transition: color 0.2s ease;">
